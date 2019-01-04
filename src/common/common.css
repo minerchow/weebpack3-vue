@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: #eee;
+    color: #000;
+    overflow-x: hidden;
+}
+  ul,
+  li,
+  dl,
+  dt,
+  dd {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0px;
+    padding: 0px;
+  }
+  div,
+  p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  b,
+  strong {
+    font-weight: bold;
+  }
+  i,
+  em {
+    font-style: italic;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  img {
+    border: 0;
+  }
+  .rel{
+      position: relative;
+  }
+  .clear {
+    clear: both;
+  }
+  /* new clearfix */
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  * html .clearfix {
+    zoom: 1;
+  } /* IE6 */
+  *:first-child + html .clearfix {
+    zoom: 1;
+  } /* IE7 */
+  .fl{float: left}
+  .fr{float: right}
+  nav {
+    margin-bottom: 10px;
+  }
+  
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all 0.3s;
+  }
+  
+  .fade-enter,
+  .fade-leave-active {
+    transition: all 0.3s;
+    opacity: 0;
+  }
+  
+  .fold-enter-active {
+    animation-name: fold-in;
+    animation-duration: 0.1s;
+  }
+  
+  .fold-leave-active {
+    animation-name: fold-out;
+    animation-duration: 0.1s;
+  }
+  .navigation {
+    padding: 0 15px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    font-family: "MicrosoftYaHei";
+    color: #fff;
+    background: -webkit-linear-gradient(left, #42aedf, #68c7ef);
+    background: -o-linear-gradient(left, #42aedf, #68c7ef);
+    background: -moz-linear-gradient(left, #42aedf, #68c7ef);
+    background: linear-gradient(to right, #42aedf, #68c7ef);
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+        gradientType=0,
+        startColorStr=#68c7ef,
+        endColorStr=#42aedf
+      );
+  }
+ 
+  .el-tabs__item {
+    color: #fff !important;
+    padding: 0 20px !important;
+  }
+   .el-tabs__item:hover{
+     background: #17A7E8;
+   }
+  
+  .main-content{
+    
+    overflow-y: hidden;
+ }
+ .el-main{
+  flex-basis: 0 !important;
+  overflow: hidden;
+}
+  @keyframes fold-in {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fold-out {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 100%, 0);
+    }
+  }
